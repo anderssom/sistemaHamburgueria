@@ -1,0 +1,24 @@
+{
+  "name": "hamburgueriath",
+  "version": "1.0.0",
+  "description": "agora vai",
+  "main": "./api/server.js",
+  "author": "fi de quenga",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon "
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "axios": "^0.21.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
+  }
+}

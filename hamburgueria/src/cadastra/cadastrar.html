@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria</title>
+</head >
+<link rel="stylesheet" href="../cadastra/stileCadastrar/stilecadastra.css">
+<link rel="stylesheet" href="../cadastra/postCadastrar/cadastrarPost.js"> 
+<link rel="stylesheet" href="../cadastra/stileCadastrar/stileCadastra.js">
+
+
+
+<body>
+    
+    <script src="../cadastra/postCadastrar/cadastrarPost.js"></script>
+
+    <form>
+        <h1>Cadastrar Funcionario</h1>
+        <input type="email" id="email" name="Email" placeholder="Digite seu E-mail" >
+        <input type="email" id="confirmaEmail" name="confirmaEmail" placeholder="Confime seu E-mail" >
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+        <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Cofirme sua senha">
+        <input type="nome" id="role" name="role" placeholder="Digite sua Função" >
+        <input type="radio" id="true" value="Ativo" class="Ativo"> Concorde com os termos </input>
+        <input type="button" id="cadastrar" value="Salvar" onclick="entrar()">
+        <input type="button" id="home" value="Home" onclick="home(location.replace('../home/home.html'))">
+    </form>
+</body>
+</html>

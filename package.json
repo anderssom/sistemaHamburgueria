@@ -1,0 +1,11 @@
+{
+  "main": "../sistemaHambugueria/hamburgueriath/api/server.js ",
+  "scripts": {
+    "start": "nodemon "
+  },
+  "dependencies": {
+    "axios": "^0.21.3",
+    "bootstrap": "^5.1.1",
+    "cors": "^2.8.5"
+  }
+}

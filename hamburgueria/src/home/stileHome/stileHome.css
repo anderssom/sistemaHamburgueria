@@ -1,0 +1,56 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+body{
+    background-color: blue;
+    
+}
+
+form{
+    background-color: rgb(216, 207, 193);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+
+}
+
+form h1{
+    text-align: center;
+    color: rgb(124, 121, 121);
+
+}
+
+form input[id=pedidos],
+form input[id=cadastrar],
+form input[id=usuarios],
+form input[id=cardapio],
+form input[id=sair]{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    cursor: pointer;
+    background: darkgrey;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+form input[id=cadastrar]:hover{
+    background-color: cadetblue;
+}
+form input[id=pedidos]:hover{
+    background-color: cadetblue;
+}
+form input[id=cardapio]:hover{
+    background-color: cadetblue;
+}
+form input[id=usuarios]:hover{
+    background-color: cadetblue;
+}
+form input[id=sair]:hover{
+    background-color: cadetblue;
+}

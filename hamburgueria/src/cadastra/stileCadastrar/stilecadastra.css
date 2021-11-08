@@ -1,0 +1,64 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+body{
+    background-color: blue;
+    
+}
+
+form{
+    background-color: rgb(216, 207, 193);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+
+}
+
+form h1{
+    text-align: center;
+    color: rgb(124, 121, 121);
+
+}
+form input[id=email],
+form input[id=confirmaEmail],
+form input[id=senha],
+form input[id=confirmaSenha],
+form input[id=role]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+form input[id="cadastrar"],
+form input[id="home"]{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    cursor: pointer;
+    background: darkgrey;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+form input[id=cadastrar]:hover{
+    background-color: cadetblue;
+}
+form input[id="home"]:hover{
+    background-color: cadetblue;
+}
+
+button.red{
+    color: red;
+}
+
+button.red{
+    color: blue;
+}
