@@ -1,26 +1,34 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 
 body{
-    background-color: blue;
-    
+
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-image: url("https://images.pexels.com/photos/5836781/pexels-photo-5836781.jpeg?cs=srgb&dl=pexels-roman-odintsov-5836781.jpg&fm=jpg");
+    background-color: #000000ca;  
+    background-size: 100vh;
+  background-repeat: no-repeat; 
+background-position: center;
+  
 }
 
-form{
-    background-color: rgb(216, 207, 193);
-    max-width: 500px;
+form {
+    background-color: rgba(124, 121, 121, 0.198);
+    box-shadow: 1px 2px 10px rgb(255, 81, 0), 3px 6px 20px rgb(238, 255, 0);
+    max-width: 400px;
     width: 70%;
     padding: 20px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 20px;
-
-}
+    transform: translate(-50%, -50%);
+    border-radius: 20px 0;
+  }
 
 form h1{
+    font-family: "Roboto Mono", monospace;
     text-align: center;
-    color: rgb(124, 121, 121);
+    color: rgb(250, 227, 17);
 
 }
 form input[id=email],
@@ -28,6 +36,7 @@ form input[id=confirmaEmail],
 form input[id=senha],
 form input[id=confirmaSenha],
 form input[id=role]{
+    font-family: "Roboto Mono", monospace;
     width: 100%;
     height: 45px;
     border: 1px solid #ccc;
@@ -35,6 +44,8 @@ form input[id=role]{
     margin: 10px 0;
     border-radius: 20px;
     text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.123);
 }
 form input[id="cadastrar"],
 form input[id="home"]{
@@ -55,10 +66,3 @@ form input[id="home"]:hover{
     background-color: cadetblue;
 }
 
-button.red{
-    color: red;
-}
-
-button.red{
-    color: blue;
-}
