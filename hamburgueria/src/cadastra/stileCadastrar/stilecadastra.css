@@ -45,7 +45,8 @@ form input[id=role]{
     border-radius: 20px;
     text-align: center;
     color: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.123);
+    background: rgba(169, 169, 169, 0.445);
+    
 }
 form input[id="cadastrar"],
 form input[id="home"]{
@@ -53,8 +54,8 @@ form input[id="home"]{
     height: 40px;
     margin: 10px 0;
     cursor: pointer;
-    background: darkgrey;
-    color: white;
+    color: rgb(0, 0, 0);
+    background: rgba(169, 169, 169, 0.445);
     border: 0;
     border-radius: 20px;
     transition: 1s;
@@ -66,3 +67,6 @@ form input[id="home"]:hover{
     background-color: cadetblue;
 }
 
+::placeholder{
+    color: black;
+}

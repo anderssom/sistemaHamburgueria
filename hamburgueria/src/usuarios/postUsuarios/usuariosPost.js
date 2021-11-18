@@ -1,4 +1,4 @@
-
+import BotaoDel from '../postUsuarios/componentes/botaoDel.js'
 
 async function getContent(){
 
@@ -6,46 +6,44 @@ async function getContent(){
 
       const response = await fetch('http://localhost:3338/login')
       //console.log(response)
-      const data = await response.json()
-
-      show(data)
-
+      const data = await response.json();
       
+      criarTarefa(data)
+      //console.log(data)
+
   } catch (error) {
       console.log(error)
       
   }
 
 }
-
 getContent()
-function show(users) {
-  let output = ''
-  for(let user of users){
 
-    output +=
-    
-    `<table class="border">
-    
-    <td class="id" >${user.id}</td>
-     <td class="email" >${user.email}</td>
-     <td>
-    
-     <button class="blue" >E</button>
- 
-     </td>
-     <td>
-     
-     <button class="red" onClick="deletar()">X</button>
- 
-     </td>    
-      </table>`
-      
-     
-  }  
+// cria a funçao para pega o evento
+const criarTarefa = (users) =>{
 
-  document.getElementById('lista').innerHTML = output
+  //users.preventDefault();
 
+  for(let user of users) {
 
-      }
+  //seleciona a lista 
+  const lista = document.querySelector('[data-list]');
 
+  //criar uma lista de usuarios
+  const  tarefa = document.createElement('li');
+  tarefa.classList.add()
+  
+  //pega o conteudo da lista
+
+    const conteudo = `<p class="email" >${user.email}</p>`
+   // console.log(conteudo);
+  
+  //mostra a lista na tela
+  tarefa.innerHTML = conteudo
+  
+  //insere um novo nó na estrutura
+  tarefa.appendChild(BotaoDel());
+  lista.appendChild(tarefa);
+  }
+
+}
